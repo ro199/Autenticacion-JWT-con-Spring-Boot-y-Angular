@@ -4,6 +4,7 @@
         <th scope="col">Id</th>
         <th scope="col">Nombre</th>
         <th scope="col">Precio</th>
+        <th scope="col">Ver</th>
         <th scope="col">Editar</th>
         <th scope="col">Borrar</th>
       </tr>
@@ -13,6 +14,7 @@
         <td>{{prod.id}}</td>
         <td>{{prod.nombre}}</td>
         <td>{{prod.precio}}</td>
+        <td><button class="btn btn-outline-primary" routerLink="/detalle/{{producto.id}}"><i class="far fa-eye"></i> Ver</button></td>
         <td><button class="btn btn-outline-warning" routerLink="/editar/{{prod.id}}"><i class="far fa-edit"></i> Editar</button></td>
         <td><button class="btn btn-outline-danger" (click)="borrar(prod.id)"><i class="far fa-trash-alt"></i> Borrar</button></td>
       </tr>
